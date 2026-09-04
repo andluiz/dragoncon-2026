@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dragon Con plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1218;--panel:#171b23;--line:#262c38;--ink:#efe7d8;--mute:#8b90a0;--ember:#e8552b;--gold:#f2b233;--walk:#5fb2c9;--wait:#c96fd6;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:16px;line-height:1.35;display:flex;flex-direction:column;height:100dvh}
+header{padding:14px 16px 10px;border-bottom:1px solid var(--line);flex:none}
+h1{font-family:Cinzel,Georgia,serif;font-size:20px;font-weight:700;color:var(--gold);margin:0;letter-spacing:.02em}
+.sub{margin:2px 0 0;color:var(--mute);font-size:13px}
+nav{display:flex;gap:6px;padding:10px 16px;overflow-x:auto;flex:none;scrollbar-width:none;border-bottom:1px solid var(--line)}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:none;background:var(--panel);border:1px solid var(--line);color:var(--mute);border-radius:8px;padding:7px 12px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+nav button.on{border-color:var(--ember);color:var(--ink);background:#22171a}
+.days{flex:1;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.day{flex:none;width:100vw;max-width:640px;scroll-snap-align:start;overflow-y:auto;padding:14px 16px 60px;border-right:1px solid var(--line)}
+.day h2{font-family:Cinzel,Georgia,serif;font-size:15px;letter-spacing:.06em;margin:0 0 2px;color:var(--ink)}
+.day .note{color:var(--mute);font-size:13px;margin:0 0 14px}
+.ev{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.t{color:var(--gold);font-weight:600;font-size:14px;padding-top:2px}
+.ev .n{font-weight:600}
+.ev .p{color:var(--mute);font-size:14px}
+.ev .d{font-size:14px;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font-size:12px;font-weight:600;padding:2px 8px;border-radius:12px;border:1px solid}
+.walk{color:var(--walk);border-color:var(--walk)}
+.wait{color:var(--wait);border-color:var(--wait)}
+.ride{color:var(--mute);border-color:var(--mute)}
+.solo{color:var(--ember);border-color:var(--ember)}
+.swap{margin:12px 0 0;padding:10px 12px;border:1px dashed var(--line);border-radius:8px;font-size:14px;color:var(--mute)}
+.swap b{color:var(--ink)}
+.map{color:var(--gold);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;padding:1px 6px;border:1px solid var(--gold);border-radius:10px;margin-left:4px}
+.legend{display:flex;gap:6px;flex-wrap:wrap;padding:8px 16px 0;font-size:12px;color:var(--mute);flex:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Dragon Con plan</h1>
+  <p class="sub">Anna · André · Dante · base in Grant Park · MARTA King Memorial · Exit trigger: Dante stops tracking us or asks to leave</p>
+</header>
+<div class="legend">
+  <span class="tag walk">🚶 walk, minutes</span><span class="tag wait">⏳ expect a line</span><span class="tag ride">🚇 transit</span><span class="tag solo">solo handoff</span>
+</div>
+<nav id="nav"></nav>
+<div class="days" id="days">
+
+<section class="day" data-d="Fri 4">
+  <h2>FRIDAY SEP 4</h2>
+  <p class="note">Con block, then Torres. 95F, low rain. Halls cold.</p>
+  <div class="ev"><div class="t">11:00</div><div><div class="n">Artist Alley</div><div class="p">AmericasMart Bldg 2, floor 4 <a class="map" href="https://www.google.com/maps/search/?api=1&query=AmericasMart%20Building%202%2C%20240%20Peachtree%20St%20NW%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Hard stop 12:00. Momoko variants, photo booth numbers for Monday. Buy only limited items.</div><div class="tags"><span class="tag wait">⏳ building entry line, 1h20 today</span></div></div></div>
+  <div class="ev"><div class="t">12:15</div><div><div class="n">Lunch · Aviva by Kameel</div><div class="p">Peachtree Center food court <a class="map" href="https://www.google.com/maps/search/?api=1&query=Peachtree%20Center%20Food%20Court%2C%20231%20Peachtree%20St%20NE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Sit as long as Dante needs.</div><div class="tags"><span class="tag walk">🚶 8 min, Bldg 2 to Peachtree Center</span><span class="tag wait">⏳ short line, moves fast</span></div></div></div>
+  <div class="ev"><div class="t">12:45</div><div><div class="n">Joystick pop-up</div><div class="p">Food court, old Benihana space <a class="map" href="https://www.google.com/maps/search/?api=1&query=Peachtree%20Center%20Food%20Court%2C%20231%20Peachtree%20St%20NE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Free play pinball and cabinets. 30 to 45 min, only if he has gas.</div><div class="tags"><span class="tag walk">🚶 1 min</span></div></div></div>
+  <div class="ev"><div class="t">14:00</div><div><div class="n">Line for X-Men '97 Cast</div><div class="p">Courtland Grand, Grand Ballroom A-F <a class="map" href="https://www.google.com/maps/search/?api=1&query=Courtland%20Grand%20Hotel%2C%20165%20Courtland%20St%20NE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">All three. Sit on an aisle by the back doors. Snacks for the wait.</div><div class="tags"><span class="tag walk">🚶 7 min, Peachtree Center to Courtland Grand, outside</span><span class="tag wait">⏳ 30 min line for seats</span></div></div></div>
+  <div class="ev"><div class="t">14:30</div><div><div class="n">X-Men '97 Cast panel</div><div class="p">Courtland Grand Ballroom <a class="map" href="https://www.google.com/maps/search/?api=1&query=Courtland%20Grand%20Hotel%2C%20165%20Courtland%20St%20NE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Out at 15:30 sharp, even if it runs long.</div></div></div>
+  <div class="ev"><div class="t">15:35</div><div><div class="n">Home</div><div class="p">MARTA Peachtree Center → Five Points → King Memorial <a class="map" href="https://www.google.com/maps/search/?api=1&query=Peachtree%20Center%20MARTA%20Station%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Home about 16:10. Shower, shirt two.</div><div class="tags"><span class="tag walk">🚶 6 min to station</span><span class="tag ride">🚇 20 min incl. transfer</span><span class="tag walk">🚶 12 min station to Airbnb</span></div></div></div>
+  <div class="ev"><div class="t">16:30</div><div><div class="n">Uber to The Battery</div><div class="p">Cumberland, 13 mi</div><div class="d">Order at 16:20. Friday I-75 traffic. No car seat: expect one driver cancel, 10 min margin.</div><div class="tags"><span class="tag ride">🚗 30 to 50 min</span><span class="tag wait">⏳ Uber wait</span></div></div></div>
+  <div class="ev"><div class="t">17:30</div><div><div class="n">Torres</div><div class="p">The Battery, main plaza by the big screen <a class="map" href="https://www.google.com/maps/search/?api=1&query=The%20Battery%20Atlanta%2C%20800%20Battery%20Ave%20SE" target="_blank" rel="noopener">map ↗</a></div><div class="d">Pick a restaurant once you see the lines. Dinner there, lawn for Dante.</div></div></div>
+  <div class="ev"><div class="t">19:15</div><div><div class="n">Uber home</div><div class="p">Home by 20:00</div><div class="tags"><span class="tag ride">🚗 30 to 40 min</span></div></div></div>
+</section>
+
+<section class="day" data-d="Sat 5">
+  <h2>SATURDAY SEP 5</h2>
+  <p class="note">Parade day. Stay WEST of Peachtree all morning, the route blocks crossing. Football kickoff 15:30, downtown gridlocks from 14:00. 93F.</p>
+  <div class="ev"><div class="t">05:45</div><div><div class="n">Leave Airbnb</div><div class="p">MARTA King Memorial → Five Points → Peachtree Center <a class="map" href="https://www.google.com/maps/search/?api=1&query=King%20Memorial%20MARTA%20Station%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 12 min to station</span><span class="tag ride">🚇 20 min</span><span class="tag walk">🚶 12 min station to Breakfast Club</span></div></div></div>
+  <div class="ev"><div class="t">06:30</div><div><div class="n">Atlanta Breakfast Club</div><div class="p">249 Ivan Allen Jr Blvd <a class="map" href="https://www.google.com/maps/search/?api=1&query=Atlanta%20Breakfast%20Club%2C%20249%20Ivan%20Allen%20Jr%20Blvd%20NW" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag wait">⏳ line by 07:00 on a normal Saturday, worse today</span></div></div></div>
+  <div class="ev"><div class="t">08:00</div><div><div class="n">Walk to the parade spot</div><div class="p">Mid-route, west side of Peachtree St, between Ralph McGill and Baker <a class="map" href="https://www.google.com/maps/search/?api=1&query=Peachtree%20St%20NE%20%26%20Ralph%20McGill%20Blvd%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Sit pad, umbrella for shade, snacks, bottle. Curb spots gone by 09:00.</div><div class="tags"><span class="tag walk">🚶 15 min, Ivan Allen to Peachtree</span></div></div></div>
+  <div class="ev"><div class="t">08:30</div><div><div class="n">Claim spot</div><div class="p">Hold it. Bathrooms: Peachtree Center mall, 5 min south.</div></div></div>
+  <div class="ev"><div class="t">10:00</div><div><div class="n">🐉 PARADE</div><div class="p">Runs about 90 min. Leave whenever Dante is done.</div></div></div>
+  <div class="ev"><div class="t">12:00</div><div><div class="n">Fountain of Rings</div><div class="p">Centennial Olympic Park <a class="map" href="https://www.google.com/maps/search/?api=1&query=Fountain%20of%20Rings%2C%20Centennial%20Olympic%20Park%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Show at 12:30. Spare clothes, ziplock for the wet ones.</div><div class="tags"><span class="tag walk">🚶 15 min, Peachtree to the park, west</span></div></div></div>
+  <div class="ev"><div class="t">13:00</div><div><div class="n">Leave downtown</div><div class="p">MARTA Peachtree Center, or Uber to Ponce City Market for AC and a food hall</div><div class="d">Hard line. Do not be downtown after 14:00.</div><div class="tags"><span class="tag walk">🚶 12 min to Peachtree Center</span><span class="tag wait">⏳ station crowd after the parade</span></div></div></div>
+  <div class="ev"><div class="t">14:00</div><div><div class="n">Rest</div><div class="p">Airbnb</div></div></div>
+  <div class="ev"><div class="t">17:00</div><div><div class="n">Evening open</div><div class="p">Grant Park. Dakota Blue or Six Feet Under.</div></div></div>
+</section>
+
+<section class="day" data-d="Sun 6">
+  <h2>SUNDAY SEP 6</h2>
+  <p class="note">Dante's con day. Calmer than Saturday. Zahn signing for Anna at 13:00. Murray at 17:00. 90F.</p>
+  <div class="ev"><div class="t">09:00</div><div><div class="n">Bomb Biscuit</div><div class="p">519 Memorial Dr SE <a class="map" href="https://www.google.com/maps/search/?api=1&query=Bomb%20Biscuit%20Co%2C%20519%20Memorial%20Dr%20SE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 8 min from Airbnb</span><span class="tag wait">⏳ Sunday brunch line, 15 to 30 min</span></div></div></div>
+  <div class="ev"><div class="t">10:00</div><div><div class="n">To the con</div><div class="p">MARTA King Memorial → Five Points → Peachtree Center <a class="map" href="https://www.google.com/maps/search/?api=1&query=King%20Memorial%20MARTA%20Station%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 4 min Bomb Biscuit to station</span><span class="tag ride">🚇 20 min</span><span class="tag walk">🚶 7 min station to Courtland Grand</span></div></div></div>
+  <div class="ev"><div class="t">10:30</div><div><div class="n">Kaleidoscope + Kids Character Encounter</div><div class="p">Courtland Grand <a class="map" href="https://www.google.com/maps/search/?api=1&query=Courtland%20Grand%20Hotel%2C%20165%20Courtland%20St%20NE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Stroller parking on site. Pick one craft or show. Times in the app under Kaleidoscope.</div><div class="tags"><span class="tag wait">⏳ Character Encounter line, 20 to 40 min</span></div></div></div>
+  <div class="ev"><div class="t">12:00</div><div><div class="n">Lunch</div><div class="p">Peachtree Center food court, or the food trucks outside the Courtland Grand</div><div class="tags"><span class="tag walk">🚶 7 min to the food court, 0 to the trucks</span></div></div></div>
+  <div class="ev"><div class="t">12:40</div><div><div class="n">Anna → Timothy Zahn signing</div><div class="p">13:00, room in the app. Likely Westin Overlook 6F <a class="map" href="https://www.google.com/maps/search/?api=1&query=The%20Westin%20Peachtree%20Plaza%2C%20210%20Peachtree%20St%20NW%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Bring the top two books. Item cap.</div><div class="tags"><span class="tag solo">Anna solo, 60 min</span><span class="tag walk">🚶 5 min food court to Westin</span><span class="tag wait">⏳ 20 min line before 13:00</span></div></div></div>
+  <div class="ev"><div class="t">12:40</div><div><div class="n">André + Dante → Joystick or Bldg 3</div><div class="p">Whichever he asks for</div><div class="tags"><span class="tag walk">🚶 1 min Joystick / 8 min Bldg 3</span></div></div></div>
+  <div class="ev"><div class="t">14:00</div><div><div class="n">Home</div><div class="p">Meet at the food court by the MARTA entrance. MARTA to King Memorial.</div><div class="tags"><span class="tag ride">🚇 20 min</span><span class="tag walk">🚶 12 min</span></div></div></div>
+  <div class="swap"><b>SWAP if Dante is done with crowds:</b> <a class="map" href="https://www.google.com/maps/search/?api=1&query=Zoo%20Atlanta%2C%20800%20Cherokee%20Ave%20SE" target="_blank" rel="noopener">Zoo Atlanta ↗</a> at 10:00, 1 mi from the Airbnb (20 min walk or short Uber). Skip the con. Anna Ubers in alone for the 13:00 signing.</div>
+  <div class="ev"><div class="t">17:00</div><div><div class="n">Murray</div><div class="p">His pick of neighborhood. Until 20:30 max.</div></div></div>
+</section>
+
+<section class="day" data-d="Mon 7">
+  <h2>MONDAY SEP 7</h2>
+  <p class="note">Labor Day. Aquarium booked. Vendor buys. Con closes 16:00. 82F, finally.</p>
+  <div class="ev"><div class="t">08:15</div><div><div class="n">Leave Airbnb</div><div class="p">MARTA King Memorial → Peachtree Center, walk west <a class="map" href="https://www.google.com/maps/search/?api=1&query=King%20Memorial%20MARTA%20Station%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 12 min</span><span class="tag ride">🚇 20 min</span><span class="tag walk">🚶 15 min station to aquarium</span></div></div></div>
+  <div class="ev"><div class="t">09:00</div><div><div class="n">🐠 Georgia Aquarium</div><div class="p">Booked. Arrive at open. <a class="map" href="https://www.google.com/maps/search/?api=1&query=Georgia%20Aquarium%2C%20225%20Baker%20St%20NW%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Dolphin or sea lion show seats reserved onsite when you enter. Fills from 11:00.</div><div class="tags"><span class="tag wait">⏳ entry line 10 to 20 min, timed ticket</span></div></div></div>
+  <div class="ev"><div class="t">12:30</div><div><div class="n">Lunch</div><div class="p">Aquarium café or Centennial Park side</div></div></div>
+  <div class="ev"><div class="t">13:30</div><div><div class="n">Streetcar → Peachtree Center</div><div class="p">Centennial Olympic Park stop. $1, separate from MARTA. <a class="map" href="https://www.google.com/maps/search/?api=1&query=Centennial%20Olympic%20Park%20Streetcar%20Stop%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 5 min to the stop</span><span class="tag ride">🚋 10 min</span><span class="tag walk">🚶 5 min stop to Bldg 2</span></div></div></div>
+  <div class="ev"><div class="t">14:00</div><div><div class="n">Vendor Hall, the real buy</div><div class="p">AmericasMart Bldg 2, floors 1 to 3 <a class="map" href="https://www.google.com/maps/search/?api=1&query=AmericasMart%20Building%202%2C%20240%20Peachtree%20St%20NW%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="d">Booth numbers from Friday. Big dealers discount to avoid shipping. Artist Alley likely packed up.</div><div class="tags"><span class="tag wait">⏳ entry line short on Monday</span></div></div></div>
+  <div class="ev"><div class="t">15:45</div><div><div class="n">Out. Home.</div><div class="p">MARTA Peachtree Center → King Memorial <a class="map" href="https://www.google.com/maps/search/?api=1&query=Peachtree%20Center%20MARTA%20Station%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 5 min</span><span class="tag ride">🚇 20 min</span><span class="tag walk">🚶 12 min</span></div></div></div>
+  <div class="ev"><div class="t">17:00</div><div><div class="n">Evening open</div><div class="p">Pack. Powder container 4 is tomorrow's.</div></div></div>
+</section>
+
+<section class="day" data-d="Tue 8">
+  <h2>TUESDAY SEP 8</h2>
+  <p class="note">Home.</p>
+  <div class="ev"><div class="t">08:00</div><div><div class="n">Home grown GA</div><div class="p">968 Memorial Dr SE <a class="map" href="https://www.google.com/maps/search/?api=1&query=Home%20grown%20GA%2C%20968%20Memorial%20Dr%20SE%2C%20Atlanta" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag walk">🚶 20 min from Airbnb, or 5 min Uber</span><span class="tag wait">⏳ weekday line 10 to 20 min</span></div></div></div>
+  <div class="ev"><div class="t">11:00</div><div><div class="n">Checkout</div><div class="p">Airbnb, Grant Park</div></div></div>
+  <div class="ev"><div class="t">11:15</div><div><div class="n">Uber to ATL</div><div class="p">Domestic terminal, Delta <a class="map" href="https://www.google.com/maps/search/?api=1&query=Hartsfield-Jackson%20Atlanta%20International%20Airport%20Domestic%20Terminal" target="_blank" rel="noopener">map ↗</a></div><div class="tags"><span class="tag ride">🚗 20 to 30 min</span><span class="tag wait">⏳ security 20 to 40 min, ATL is big</span></div></div></div>
+  <div class="ev"><div class="t">14:30</div><div><div class="n">✈️ DL 524 · ATL → LGA 16:48</div><div class="p">Take the whey when you get home.</div></div></div>
+</section>
+
+</div>
+<script>
+(function(){
+  var days=Array.prototype.slice.call(document.querySelectorAll('.day'));
+  var nav=document.getElementById('nav');
+  var wrap=document.getElementById('days');
+  days.forEach(function(d,i){
+    var b=document.createElement('button');
+    b.textContent=d.dataset.d;
+    b.addEventListener('click',function(){ wrap.scrollTo({left:d.offsetLeft-wrap.offsetLeft,behavior:'smooth'}); });
+    nav.appendChild(b);
+  });
+  var btns=nav.querySelectorAll('button');
+  function sync(){
+    var x=wrap.scrollLeft, w=days[0].offsetWidth, i=Math.round(x/w);
+    btns.forEach(function(b,j){ b.classList.toggle('on',j===i); });
+  }
+  wrap.addEventListener('scroll',sync,{passive:true});
+  var today=new Date(), map={4:0,5:1,6:2,7:3,8:4};
+  var idx=(today.getMonth()===8 && map[today.getDate()]!==undefined)?map[today.getDate()]:0;
+  wrap.scrollLeft=days[idx].offsetLeft-wrap.offsetLeft; sync();
+})();
+</script>
+</body>
+</html>
